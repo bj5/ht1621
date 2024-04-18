@@ -6,7 +6,7 @@ Arduino library for 7-segment LCDs based on the HT1621 driver, with support for 
 
 Based on the bitbanging efforts by [anxzhu](https://github.com/anxzhu) (2016-2018).  
 
-APIs rewritten in 2018 to follow the LiquidCrystal format by [valerio\new](https://github.com/valerionew).
+APIs rewritten in 2018 to follow the LiquidCrystal format by [valerionew](https://github.com/valerionew).
 
 Rewritten again by [kreddkrikk](github.com/kreddkrikk/ht1621) with support for 4-digit displays and low power modes.
 
