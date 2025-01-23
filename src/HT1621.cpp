@@ -219,7 +219,31 @@ void HT1621::update() {
     wrlow();
 }
 
+//j5 20250123
+
+void HT1621::reverse_string(char* str) {
+	
+    if (str == NULL) return;
+    
+    int length = strlen(str);
+    int start = 0;
+    int end = length - 1;
+    
+    while (start < end) {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+
 void HT1621::print(const char* str) {
+
+    ////j5 20250123
+	reverse_string(str);
+    
     // Clear HT1621 buffer
     for (int i = 0; i < HT_SEG_END; i++)
         _ht_buf[i] = 0;
