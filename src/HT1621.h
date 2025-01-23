@@ -208,7 +208,9 @@ class  HT1621
         void wrCLR(uint8_t len);
         void wrDATA(uint8_t data, uint8_t cnt);
         void wrCMD(uint8_t CMD);
-
+        //j5 20250123
+		void HT1621::reverse_string(char* str);
+        
         // Fixes issues with segments appearing too dark when off.
         void wrlow();
 
